@@ -1,0 +1,43 @@
+/* Basic styling for the game */
+.game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-board {
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .game-info {
+    padding: 20px;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    width: 0;
+    height: 0;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0;
+    text-align: center;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }

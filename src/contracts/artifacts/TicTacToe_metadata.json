@@ -1,0 +1,215 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					}
+				],
+				"name": "GameCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum TicTacToe.Player",
+						"name": "winner",
+						"type": "uint8"
+					}
+				],
+				"name": "GameOver",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "position",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum TicTacToe.Player",
+						"name": "player",
+						"type": "uint8"
+					}
+				],
+				"name": "MoveMade",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "createGame",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "games",
+				"outputs": [
+					{
+						"internalType": "enum TicTacToe.Player",
+						"name": "currentPlayer",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum TicTacToe.Player",
+						"name": "winner",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					}
+				],
+				"name": "getBoard",
+				"outputs": [
+					{
+						"internalType": "enum TicTacToe.Player[]",
+						"name": "",
+						"type": "uint8[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					}
+				],
+				"name": "getCurrentPlayer",
+				"outputs": [
+					{
+						"internalType": "enum TicTacToe.Player",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					}
+				],
+				"name": "getWinner",
+				"outputs": [
+					{
+						"internalType": "enum TicTacToe.Player",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "gameId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "position",
+						"type": "uint256"
+					}
+				],
+				"name": "makeMove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TicTacToe.sol": "TicTacToe"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TicTacToe.sol": {
+			"keccak256": "0x416eddaa8061555ddcd04883a0954cf8bb9f393c2a00c053819f7b1ee0a6f7d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://564b08c4026fd35b3fffc77bea77557becc6e169a8d51d4f00a1255d5006c874",
+				"dweb:/ipfs/Qmd9FbiMbb4fwa86AwxHm3sJKTvPrjb7w2tg4GRDhwPNCj"
+			]
+		}
+	},
+	"version": 1
+}
